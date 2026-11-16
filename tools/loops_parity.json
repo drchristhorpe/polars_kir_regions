@@ -1,0 +1,42 @@
+{
+ "alleles": {
+  "total": 17847,
+  "identical": 17847,
+  "disagreements": 0,
+  "architecturally_absent": 3870,
+  "golden_status_counts": {
+   "complete": 13855,
+   "absent": 113,
+   "partial": 9
+  },
+  "examples": [],
+  "seconds": 1.999
+ },
+ "chains": {
+  "total": 486,
+  "identical": 486,
+  "disagreements": 0,
+  "architecturally_absent": 108,
+  "golden_status_counts": {
+   "complete": 373,
+   "absent": 3,
+   "partial": 2
+  },
+  "examples": [],
+  "seconds": 0.027
+ },
+ "literal_vs_column": {
+  "chains": 20,
+  "identical": 180,
+  "differing": 0
+ },
+ "provenance": {
+  "alleles": {
+   "annotated": 242,
+   "inferred": 1741
+  },
+  "chains": {
+   "inferred": 54
+  }
+ }
+}

@@ -1,0 +1,1003 @@
+{
+ "_provenance": {
+  "generated_by": "codegen/vendor_loops.py",
+  "published_windows": "histo_kir/data/kir_loop_windows.csv -- Boyington & Sun, Mol Immunol 38:1007-1021 (2001), Fig. 5, transferred per gene by alignment in Phase 0",
+  "d0_patch": "histo_kir.reference.D0_PATCHES_KIR3DL1 (KIR3DL1 mature 9-13 and 27-34), transferred within the D0D1D2 architecture by histo_kir.domains.d0_patches; undetermined for D0D2 and absent for D1D2",
+  "ccprime_extension": "histo_kir.reference.CCPRIME_EXTENSION_REF_POS = 41 in the KIR2DL2 frame, transferred by histo_kir.domains.ccprime_extension; D0D1D2 only",
+  "gene_reference": "histo_kir/data/kir_gene_reference.csv",
+  "precursors": "tests/data/ipdkir_alleles.json (IPD-KIR 2.15.0 translations)",
+  "numbering": "element windows are MATURE numbering counted from the signal-peptide CLEAVAGE site; a precursor position is signal_peptide_length + mature_position. The exon-derived leader is a different origin, 2 residues longer in all 15 genes.",
+  "aligner": {
+   "matrix": "BLOSUM62 (Biopython scoring='blastp')",
+   "gap_open": -12.0,
+   "gap_extend": -1.0,
+   "end_gaps": "penalized as internal -- the reference's open_gap_score assignment overwrites the end-gap scores it sets earlier",
+   "traceback": "match state preferred, then ref-consuming, then query-consuming gap"
+  }
+ },
+ "element_order": [
+  "A'B",
+  "CC'",
+  "EF",
+  "hinge",
+  "BC",
+  "FG",
+  "D0a",
+  "D0b",
+  "CC'ext"
+ ],
+ "genes": {
+  "KIR2DL1": {
+   "architecture": "D1D2",
+   "reference_allele": "KIR2DL1*0010101",
+   "signal_peptide_length": 21,
+   "mature_length": 327,
+   "precursor": "MSLLVVSMACVGFFLLQGAWPHEGVHRKPSLLAHPGPLVKSEETVILQCWSDVMFEHFLLHREGMFNDTLRLIGEHHDGVSKANFSISRMTQDLAGTYRCYGSVTHSPYQVSAPSDPLDIVIIGLYEKPSLSAQPGPTVLAGENVTLSCSSRSSYDMYHLSREGEAHERRLPAGPKVNGTFQADFPLGPATHGGTYRCFGSFHDSPYEWSKSSDPLLVSVTGNPSNSWPSPTEPSSKTGNPRHLHILIGTSVVIILFILLFFLLHRWCSNKKNAAVMDQESAGNRTANSEDSDEQDPQEVTYTQLNHCVFTQRKITRPSQRPKTPPTDIIVYTELPNAESRSKVVSCP",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 20,
+     "mature_end": 22,
+     "sequence": "SEE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 43,
+     "mature_end": 46,
+     "sequence": "GMFN"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 68,
+     "mature_end": 73,
+     "sequence": "RMTQDL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 103,
+     "mature_end": 107,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 131,
+     "mature_end": 136,
+     "sequence": "RSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 180,
+     "mature_end": 188,
+     "sequence": "SFHDSPYEW"
+    }
+   ]
+  },
+  "KIR2DL2": {
+   "architecture": "D1D2",
+   "reference_allele": "KIR2DL2*0010101",
+   "signal_peptide_length": 21,
+   "mature_length": 327,
+   "precursor": "MSLMVVSMACVGFFLLQGAWPHEGVHRKPSLLAHPGRLVKSEETVILQCWSDVRFEHFLLHREGKFKDTLHLIGEHHDGVSKANFSIGPMMQDLAGTYRCYGSVTHSPYQLSAPSDPLDIVITGLYEKPSLSAQPGPTVLAGESVTLSCSSRSSYDMYHLSREGEAHECRFSAGPKVNGTFQADFPLGPATHGGTYRCFGSFRDSPYEWSNSSDPLLVSVIGNPSNSWPSPTEPSSKTGNPRHLHILIGTSVVIILFILLFFLLHRWCSNKKNAAVMDQESAGNRTANSEDSDEQDPQEVTYTQLNHCVFTQRKITRPSQRPKTPPTDIIVYAELPNAESRSKVVSCP",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 20,
+     "mature_end": 22,
+     "sequence": "SEE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 43,
+     "mature_end": 46,
+     "sequence": "GKFK"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 68,
+     "mature_end": 73,
+     "sequence": "PMMQDL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 103,
+     "mature_end": 107,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 131,
+     "mature_end": 136,
+     "sequence": "RSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 180,
+     "mature_end": 188,
+     "sequence": "SFRDSPYEW"
+    }
+   ]
+  },
+  "KIR2DL3": {
+   "architecture": "D1D2",
+   "reference_allele": "KIR2DL3*0010101",
+   "signal_peptide_length": 21,
+   "mature_length": 320,
+   "precursor": "MSLMVVSMVCVGFFLLQGAWPHEGVHRKPSLLAHPGPLVKSEETVILQCWSDVRFQHFLLHREGKFKDTLHLIGEHHDGVSKANFSIGPMMQDLAGTYRCYGSVTHSPYQLSAPSDPLDIVITGLYEKPSLSAQPGPTVLAGESVTLSCSSRSSYDMYHLSREGEAHERRFSAGPKVNGTFQADFPLGPATHGGTYRCFGSFRDSPYEWSNSSDPLLVSVTGNPSNSWPSPTEPSSETGNPRHLHVLIGTSVVIILFILLLFFLLHRWCCNKKNAVVMDQEPAGNRTVNREDSDEQDPQEVTYAQLNHCVFTQRKITRPSQRPKTPPTDIIVYTELPNAEP",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 20,
+     "mature_end": 22,
+     "sequence": "SEE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 43,
+     "mature_end": 46,
+     "sequence": "GKFK"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 68,
+     "mature_end": 73,
+     "sequence": "PMMQDL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 103,
+     "mature_end": 107,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 131,
+     "mature_end": 136,
+     "sequence": "RSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 180,
+     "mature_end": 188,
+     "sequence": "SFRDSPYEW"
+    }
+   ]
+  },
+  "KIR2DL4": {
+   "architecture": "D0D2",
+   "reference_allele": "KIR2DL4*00101",
+   "signal_peptide_length": 23,
+   "mature_length": 354,
+   "precursor": "MSMSPTVIILACLGFFLDQSVWAHVGGQDKPFCSAWPSAVVPQGGHVTLRCHYRRGFNIFTLYKKDGVPVPELYNRIFWNSFLISPVTPAHAGTYRCRGFHPHSPTEWSAPSNPLVIMVTGLYEKPSLTARPGPTVRTGENVTLSCSSQSSFDIYHLSREGEAHELRLPAVPSINGTFQADFPLGPATHGETYRCFGSFHGSPYEWSDASDPLPVSVTGNPSSSWPSPTEPSFKTGIARHLHAVIRYSVAIILFTILPFFLLHRWCSKKKNAAVMNQEPAGHRTVNREDSDEQDPQEVTYAQLDHCIFTQRKITGPSQRSKRPSTDTSVCIELPNAEPRALSPAHEHHSQALMGSSRETTALSQTQLASSNVPAAGI",
+   "elements": [
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 98,
+     "mature_end": 102,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 126,
+     "mature_end": 131,
+     "sequence": "QSSFDI"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 175,
+     "mature_end": 183,
+     "sequence": "SFHGSPYEW"
+    }
+   ]
+  },
+  "KIR2DL5A": {
+   "architecture": "D0D2",
+   "reference_allele": "KIR2DL5A*0010101",
+   "signal_peptide_length": 21,
+   "mature_length": 354,
+   "precursor": "MSLMVISMACVGFFLLQGAWTHEGGQDKPLLSAWPSAVVPRGGHVTLLCRSRLGFTIFSLYKEDGVPVPELYNKIFWKSILMGPVTPAHAGTYRCRGSHPRSPIEWSAPSNPLVIVVTGLFGKPSLSAQPGPTVRTGENVTLSCSSRSSFDMYHLSREGRAHEPRLPAVPSVNGTFQADFPLGPATHGGTYTCFGSLHDSPYEWSDPSDPLLVSVTGNSSSSSSSPTEPSSKTGIRRHLHILIGTSVAIILFIILFFFLLHCCCSNKKNAAVMDQEPAGDRTVNREDSDDQDPQEVTYAQLDHCVFTQTKITSPSQRPKTPPTDTTMYMELPNAKPRSLSPAHKHHSQALRGSSRETTALSQNRVASSHVPAAGI",
+   "elements": [
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 98,
+     "mature_end": 102,
+     "sequence": "GLFGK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 126,
+     "mature_end": 131,
+     "sequence": "RSSFDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 175,
+     "mature_end": 183,
+     "sequence": "SLHDSPYEW"
+    }
+   ]
+  },
+  "KIR2DL5B": {
+   "architecture": "D0D2",
+   "reference_allele": "KIR2DL5B*0020101",
+   "signal_peptide_length": 21,
+   "mature_length": 354,
+   "precursor": "MSLMVVSMACVGFFLLQGAWTHEGGQDKPLLSAWPSAVVPRGGHVTLLCRSRLGFTIFSLYKEDGVPVPELYNKIFWKSILMGPVTPAHAGTYRCRGSHPRSPIEWSAPSNPLVIVVTGLFGKPSLSAQPGPTVRTGENVTLSCSSRSSFDMYHLSREGRAHEPRLPAVPSVDGTFQADFPLGPATHGGTYTCFSSLHDSPYEWSDPSDPLLVSVTGNSSSSSSSPTEPSSKTGIRRHLHILIGTSVAIILFIILFFFLLHCCCSNKKNAAVMDQEPAGDRTVNREDSDDQDPQEVTYAQLDHCVFTQTKITSPSQRPKTPPTDTTMYMELPNAKPRSLSPAHKHHSQALRGSSRETTALSQNRVASSHVPAAGI",
+   "elements": [
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 98,
+     "mature_end": 102,
+     "sequence": "GLFGK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 126,
+     "mature_end": 131,
+     "sequence": "RSSFDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 175,
+     "mature_end": 183,
+     "sequence": "SLHDSPYEW"
+    }
+   ]
+  },
+  "KIR2DS1": {
+   "architecture": "D1D2",
+   "reference_allele": "KIR2DS1*001",
+   "signal_peptide_length": 21,
+   "mature_length": 283,
+   "precursor": "MSLTVVSMACVGFFLLQGAWPHEGVHRKPSLLAHPGRLVKSEETVILQCWSDVMFEHFLLHREGMFNDTLRLIGEHHDGVSKANFSISRMRQDLAGTYRCYGSVTHSPYQLSAPSDPLDIVIIGLYEKPSLSAQPGPTVLAGENVTLSCSSRSSYDMYHLSREGEAHERRLPAGTKVNGTFQANFPLGPATHGGTYRCFGSFRDSPYEWSKSSDPLLVSVTGNPSNSWPSPTEPSSETGNPRHLHVLIGTSVVKIPFTILLFFLLHRWCSDKKNAAVMDQEPAGNRTVNSEDSDEQDHQEVSYA",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 20,
+     "mature_end": 22,
+     "sequence": "SEE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 43,
+     "mature_end": 46,
+     "sequence": "GMFN"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 68,
+     "mature_end": 73,
+     "sequence": "RMRQDL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 103,
+     "mature_end": 107,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 131,
+     "mature_end": 136,
+     "sequence": "RSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 180,
+     "mature_end": 188,
+     "sequence": "SFRDSPYEW"
+    }
+   ]
+  },
+  "KIR2DS2": {
+   "architecture": "D1D2",
+   "reference_allele": "KIR2DS2*0010101",
+   "signal_peptide_length": 21,
+   "mature_length": 283,
+   "precursor": "MSLMVVSMACVGFFLLQGAWPHEGVHRKPSLLAHPGPLVKSEETVILQCWSDVRFEHFLLHREGKYKDTLHLIGEHHDGVSKANFSIGPMMQDLAGTYRCYGSVTHSPYQLSAPSDPLDIVITGLYEKPSLSAQPGPTVLAGESVTLSCSSRSSYDMYHLSREGEAHERRFSAGPKVNGTFQADFPLGPATHGGTYRCFGSFRDSPYEWSNSSDPLLVSVTGNPSNSWPSPTEPSSKTGNPRHLHVLIGTSVVKIPFTILLFFLLHRWCSNKKNAAVMDQEPAGNRTVNSEDSDEQDHQEVSYA",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 20,
+     "mature_end": 22,
+     "sequence": "SEE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 43,
+     "mature_end": 46,
+     "sequence": "GKYK"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 68,
+     "mature_end": 73,
+     "sequence": "PMMQDL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 103,
+     "mature_end": 107,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 131,
+     "mature_end": 136,
+     "sequence": "RSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 180,
+     "mature_end": 188,
+     "sequence": "SFRDSPYEW"
+    }
+   ]
+  },
+  "KIR2DS3": {
+   "architecture": "D1D2",
+   "reference_allele": "KIR2DS3*00101",
+   "signal_peptide_length": 21,
+   "mature_length": 283,
+   "precursor": "MSLMVISMACVGFFWLQGAWPHEGFRRKPSLLAHPGRLVKSEETVILQCWSDVMFEHFLLHREGTFNDTLRLIGEHIDGVSKANFSIGRMRQDLAGTYRCYGSVPHSPYQFSAPSDPLDIVITGLYEKPSLSAQPGPTVLAGESVTLSCSSWSSYDMYHLSTEGEAHERRFSAGPKVNGTFQADFPLGPATQGGTYRCFGSFHDSPYEWSKSSDPLLVSVTGNPSNSWPSPTEPSSKTGNPRHLHVLIGTSVVKLPFTILLFFLLHRWCSDKKNASVMDQGPAGNRTVNREDSDEQDHQEVSYA",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 20,
+     "mature_end": 22,
+     "sequence": "SEE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 43,
+     "mature_end": 46,
+     "sequence": "GTFN"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 68,
+     "mature_end": 73,
+     "sequence": "RMRQDL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 103,
+     "mature_end": 107,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 131,
+     "mature_end": 136,
+     "sequence": "WSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 180,
+     "mature_end": 188,
+     "sequence": "SFHDSPYEW"
+    }
+   ]
+  },
+  "KIR2DS4": {
+   "architecture": "D1D2",
+   "reference_allele": "KIR2DS4*0010101",
+   "signal_peptide_length": 21,
+   "mature_length": 283,
+   "precursor": "MSLMVIIMACVGFFLLQGAWPQEGVHRKPSFLALPGHLVKSEETVILQCWSDVMFEHFLLHREGKFNNTLHLIGEHHDGVSKANFSIGPMMPVLAGTYRCYGSVPHSPYQLSAPSDPLDMVIIGLYEKPSLSAQPGPTVQAGENVTLSCSSRSSYDMYHLSREGEAHERRLPAVRSINGTFQADFPLGPATHGGTYRCFGSFRDAPYEWSNSSDPLLVSVTGNPSNSWPSPTEPSSKTGNPRHLHVLIGTSVVKIPFTILLFFLLHRWCSDKKNAAVMDQEPAGNRTVNSEDSDEQDHQEVSYA",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 20,
+     "mature_end": 22,
+     "sequence": "SEE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 43,
+     "mature_end": 46,
+     "sequence": "GKFN"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 68,
+     "mature_end": 73,
+     "sequence": "PMMPVL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 103,
+     "mature_end": 107,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 131,
+     "mature_end": 136,
+     "sequence": "RSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 180,
+     "mature_end": 188,
+     "sequence": "SFRDAPYEW"
+    }
+   ]
+  },
+  "KIR2DS5": {
+   "architecture": "D1D2",
+   "reference_allele": "KIR2DS5*001",
+   "signal_peptide_length": 21,
+   "mature_length": 283,
+   "precursor": "MLLMVISMACVAFFLLQGAWPHEGFRRKPSLLAHPGPLVKSEETVILQCWSDVMFEHFLLHREGTFNHTLRLIGEHIDGVSKGNFSIGRMTQDLAGTYRCYGSVTHSPYQLSAPSDPLDIVITGLYEKPSLPAQPGPTVLAGESVTLSCSSRSSYDMYHLSREGEAHERRLPAGPKVNRTFQADSPLDPATHGGAYRCFGSFRDSPYEWSKSSDPLLVSVTGNSSNSWPSPTEPSSETGNPRHLHVLIGTSVVKLPFTILLFFLLHRWCSNKKNASVMDQGPAGNRTVNREDSDEQDHQEVSYA",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 20,
+     "mature_end": 22,
+     "sequence": "SEE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 43,
+     "mature_end": 46,
+     "sequence": "GTFN"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 68,
+     "mature_end": 73,
+     "sequence": "RMTQDL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 103,
+     "mature_end": 107,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 131,
+     "mature_end": 136,
+     "sequence": "RSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 180,
+     "mature_end": 188,
+     "sequence": "SFRDSPYEW"
+    }
+   ]
+  },
+  "KIR3DL1": {
+   "architecture": "D0D1D2",
+   "reference_allele": "KIR3DL1*0010101",
+   "signal_peptide_length": 21,
+   "mature_length": 423,
+   "precursor": "MSLMVVSMACVGLFLVQRAGPHMGGQDKPFLSAWPSAVVPRGGHVTLRCHYRHRFNNFMLYKEDRIHIPIFHGRIFQESFNMSPVTTAHAGNYTCRGSHPHSPTGWSAPSNPVVIMVTGNHRKPSLLAHPGPLVKSGERVILQCWSDIMFEHFFLHKEGISKDPSRLVGQIHDGVSKANFSIGPMMLALAGTYRCYGSVTHTPYQLSAPSDPLDIVVTGPYEKPSLSAQPGPKVQAGESVTLSCSSRSSYDMYHLSREGGAHERRLPAVRKVNRTFQADFPLGPATHGGTYRCFGSFRHSPYEWSDPSDPLLVSVTGNPSSSWPSPTEPSSKSGNPRHLHILIGTSVVIILFILLLFFLLHLWCSNKKNAAVMDQEPAGNRTANSEDSDEQDPEEVTYAQLDHCVFTQRKITRPSQRPKTPPTDTILYTELPNAKPRSKVVSCP",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 115,
+     "mature_end": 117,
+     "sequence": "SGE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 138,
+     "mature_end": 141,
+     "sequence": "GISK"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 163,
+     "mature_end": 168,
+     "sequence": "PMMLAL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 198,
+     "mature_end": 202,
+     "sequence": "GPYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 226,
+     "mature_end": 231,
+     "sequence": "RSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 275,
+     "mature_end": 283,
+     "sequence": "SFRHSPYEW"
+    },
+    {
+     "name": "D0a",
+     "kind": "d0_patch",
+     "domain": "D0",
+     "helix": "",
+     "mature_start": 9,
+     "mature_end": 13,
+     "sequence": "FLSAW"
+    },
+    {
+     "name": "D0b",
+     "kind": "d0_patch",
+     "domain": "D0",
+     "helix": "",
+     "mature_start": 27,
+     "mature_end": 34,
+     "sequence": "RCHYRHRF"
+    },
+    {
+     "name": "CC'ext",
+     "kind": "ccprime_extension",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 136,
+     "mature_end": 136,
+     "sequence": "K"
+    }
+   ]
+  },
+  "KIR3DL2": {
+   "architecture": "D0D1D2",
+   "reference_allele": "KIR3DL2*0010101",
+   "signal_peptide_length": 21,
+   "mature_length": 434,
+   "precursor": "MSLTVVSMACVGFFLLQGAWPLMGGQDKPFLSARPSTVVPRGGHVALQCHYRRGFNNFMLYKEDRSHVPIFHGRIFQESFIMGPVTPAHAGTYRCRGSRPHSLTGWSAPSNPLVIMVTGNHRKPSLLAHPGPLLKSGETVILQCWSDVMFEHFFLHREGISEDPSRLVGQIHDGVSKANFSIGPLMPVLAGTYRCYGSVPHSPYQLSAPSDPLDIVITGLYEKPSLSAQPGPTVQAGENVTLSCSSWSSYDIYHLSREGEAHERRLRAVPKVNRTFQADFPLGPATHGGTYRCFGSFRALPCVWSNSSDPLLVSVTGNPSSSWPSPTEPSSKSGICRHLHVLIGTSVVIFLFILLLFFLLYRWCSNKKNAAVMDQEPAGDRTVNRQDSDEQDPQEVTYAQLDHCVFIQRKISRPSQRPKTPLTDTSVYTELPNAEPRSKVVSCPRAPQSGLEGVF",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 115,
+     "mature_end": 117,
+     "sequence": "SGE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 138,
+     "mature_end": 141,
+     "sequence": "GISE"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 163,
+     "mature_end": 168,
+     "sequence": "PLMPVL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 198,
+     "mature_end": 202,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 226,
+     "mature_end": 231,
+     "sequence": "WSSYDI"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 275,
+     "mature_end": 283,
+     "sequence": "SFRALPCVW"
+    },
+    {
+     "name": "D0a",
+     "kind": "d0_patch",
+     "domain": "D0",
+     "helix": "",
+     "mature_start": 9,
+     "mature_end": 13,
+     "sequence": "FLSAR"
+    },
+    {
+     "name": "D0b",
+     "kind": "d0_patch",
+     "domain": "D0",
+     "helix": "",
+     "mature_start": 27,
+     "mature_end": 34,
+     "sequence": "QCHYRRGF"
+    },
+    {
+     "name": "CC'ext",
+     "kind": "ccprime_extension",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 136,
+     "mature_end": 136,
+     "sequence": "R"
+    }
+   ]
+  },
+  "KIR3DL3": {
+   "architecture": "D0D1D2",
+   "reference_allele": "KIR3DL3*0010101",
+   "signal_peptide_length": 21,
+   "mature_length": 389,
+   "precursor": "MSLMVVSMACVGFFLLEGPWPHVGGQDKPFLSAWPGTVVSEGQHVTLQCRSRLGFNEFSLSKEDGMPVPELYNRIFRNSFLMGPVTPAHAGTYRCCSSHPHSPTGWSAPSNPVVIMVTGVHRKPSLLAHPGPLVKSGETVILQCWSDVRFERFLLHREGITEDPLRLIGQLHDAGSQVNYSMGPMTPALAGTYRCFGSVTHLPYELSAPSDPLDIVVVGLYGKPSLSAQPGPTVQAGENVTLSCSSRSLFDIYHLSREAEAGELRLTAVLRVNGTFQANFPLGPVTHGGNYRCFGSFRALPHAWSDPSDPLPVSVTGNSRNLHVLIGTSVVIIPFAILLFFLLHRWCANKKNAVVMDQEPAGNRTVNREDSDEQDPQEVTYAQLNHCVFTQRKITRPSQRPKTPPTDTSV",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 115,
+     "mature_end": 117,
+     "sequence": "SGE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 138,
+     "mature_end": 141,
+     "sequence": "GITE"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 163,
+     "mature_end": 168,
+     "sequence": "PMTPAL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 198,
+     "mature_end": 202,
+     "sequence": "GLYGK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 226,
+     "mature_end": 231,
+     "sequence": "RSLFDI"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 275,
+     "mature_end": 283,
+     "sequence": "SFRALPHAW"
+    },
+    {
+     "name": "D0a",
+     "kind": "d0_patch",
+     "domain": "D0",
+     "helix": "",
+     "mature_start": 9,
+     "mature_end": 13,
+     "sequence": "FLSAW"
+    },
+    {
+     "name": "D0b",
+     "kind": "d0_patch",
+     "domain": "D0",
+     "helix": "",
+     "mature_start": 27,
+     "mature_end": 34,
+     "sequence": "QCRSRLGF"
+    },
+    {
+     "name": "CC'ext",
+     "kind": "ccprime_extension",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 136,
+     "mature_end": 136,
+     "sequence": "R"
+    }
+   ]
+  },
+  "KIR3DS1": {
+   "architecture": "D0D1D2",
+   "reference_allele": "KIR3DS1*010",
+   "signal_peptide_length": 21,
+   "mature_length": 366,
+   "precursor": "MSLMVVSMACVGLFLVQRAGPHMGGQDKPFLSAWPSAVVPRGGHVTLRCHYRHRFNNFMLYKEDRIHVPIFHGRIFQEGFNMSPVTTAHAGNYTCRGSHPHSPTGWSAPSNPMVIMVTGNHRKPSLLAHPGPLVKSGERVILQCWSDIMFEHFFLHKEWISKDPSRLVGQIHDGVSKANFSIGSMMRALAGTYRCYGSVTHTPYQLSAPSDPLDIVVTGLYEKPSLSAQPGPKVQAGESVTLSCSSRSSYDMYHLSREGGAHERRLPAVRKVNRTFQADFPLGPATHGGTYRCFGSFRHSPYEWSDPSDPLLVSVTGNPSSSWPSPTEPSSKSGNLRHLHILIGTSVVKIPFTILLFFLLHRWCSNKKNAAVMDQEPAGNRSEQRGF",
+   "elements": [
+    {
+     "name": "A'B",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 115,
+     "mature_end": 117,
+     "sequence": "SGE"
+    },
+    {
+     "name": "CC'",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 138,
+     "mature_end": 141,
+     "sequence": "WISK"
+    },
+    {
+     "name": "EF",
+     "kind": "published_loop",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 163,
+     "mature_end": 168,
+     "sequence": "SMMRAL"
+    },
+    {
+     "name": "hinge",
+     "kind": "published_loop",
+     "domain": "hinge",
+     "helix": "alpha2",
+     "mature_start": 198,
+     "mature_end": 202,
+     "sequence": "GLYEK"
+    },
+    {
+     "name": "BC",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 226,
+     "mature_end": 231,
+     "sequence": "RSSYDM"
+    },
+    {
+     "name": "FG",
+     "kind": "published_loop",
+     "domain": "D2",
+     "helix": "alpha2",
+     "mature_start": 275,
+     "mature_end": 283,
+     "sequence": "SFRHSPYEW"
+    },
+    {
+     "name": "D0a",
+     "kind": "d0_patch",
+     "domain": "D0",
+     "helix": "",
+     "mature_start": 9,
+     "mature_end": 13,
+     "sequence": "FLSAW"
+    },
+    {
+     "name": "D0b",
+     "kind": "d0_patch",
+     "domain": "D0",
+     "helix": "",
+     "mature_start": 27,
+     "mature_end": 34,
+     "sequence": "RCHYRHRF"
+    },
+    {
+     "name": "CC'ext",
+     "kind": "ccprime_extension",
+     "domain": "D1",
+     "helix": "alpha1",
+     "mature_start": 136,
+     "mature_end": 136,
+     "sequence": "K"
+    }
+   ]
+  }
+ }
+}

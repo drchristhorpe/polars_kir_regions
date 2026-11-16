@@ -1,0 +1,153 @@
+{
+ "frame": {
+  "windows": 81,
+  "from_cleavage_site": 81,
+  "from_exon_leader": 0,
+  "per_gene": {
+   "KIR2DL1": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR2DL2": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR2DL3": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR2DL4": {
+    "published": 3,
+    "from_cleavage": 3,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 23,
+    "leader_end_exon_frame": 25,
+    "delta": 2
+   },
+   "KIR2DL5A": {
+    "published": 3,
+    "from_cleavage": 3,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR2DL5B": {
+    "published": 3,
+    "from_cleavage": 3,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR2DS1": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR2DS2": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR2DS3": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR2DS4": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR2DS5": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR3DL1": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR3DL2": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR3DL3": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   },
+   "KIR3DS1": {
+    "published": 6,
+    "from_cleavage": 6,
+    "from_exon_leader": 0,
+    "signal_peptide_length": 21,
+    "leader_end_exon_frame": 23,
+    "delta": 2
+   }
+  },
+  "deltas": {
+   "2": 15
+  }
+ },
+ "scope": {
+  "elements": 93,
+  "by_kind": {
+   "published_loop": 81,
+   "d0_patch": 8,
+   "ccprime_extension": 4
+  },
+  "inside_ectodomain": 93,
+  "outside": [],
+  "per_architecture": {
+   "D1D2": [
+    6
+   ],
+   "D0D2": [
+    3
+   ],
+   "D0D1D2": [
+    9
+   ]
+  }
+ }
+}

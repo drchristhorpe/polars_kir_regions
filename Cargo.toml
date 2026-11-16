@@ -1,0 +1,32 @@
+[package]
+name = "polars-kir-regions"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Polars expression plugin slicing KIR ectodomain regions and HLA-contacting loops from a sequence column"
+
+[lib]
+name = "_internal"
+crate-type = ["cdylib"]
+
+[dependencies]
+# No HMM, no models, no classifier: this crate takes the gene from the caller's dataframe, so it
+# needs neither `histo_kir_hmm`'s trained models nor `polars_kir_hmm`'s Viterbi. That is why this
+# dependency list is shorter than that package's -- `rayon`, `zip` and the `.npy` reader existed
+# there only to load and score models, and nothing here does either.
+polars = { version = "0.54.4", default-features = false, features = ["dtype-struct"] }
+# default-features off for the same reason as in polars_kir_hmm: we use only `bitmap::Bitmap`, and
+# the default feature set pulls the IPC compression codecs (lz4, zstd). Beyond the dead weight,
+# those crates' archives carry `.git*` paths that a write-restricted sandbox cannot unpack, so the
+# minimal feature set is load-bearing for the build rather than merely tidy.
+polars-arrow = { version = "0.54.4", default-features = false }
+pyo3 = { version = "0.28", features = ["extension-module", "abi3-py310"] }
+pyo3-polars = { version = "0.27", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1

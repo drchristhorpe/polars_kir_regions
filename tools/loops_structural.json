@@ -1,0 +1,57 @@
+{
+ "coordinate_check": {
+  "identical": 373,
+  "disagreements": 0,
+  "offsets": {
+   "0": 42,
+   "21": 12
+  },
+  "examples": []
+ },
+ "domain_check": {
+  "inside": 93,
+  "outside": 0,
+  "examples": [],
+  "hinge_inside_D2": 15,
+  "hinge_has_shared_codon": 15,
+  "hinge_first_residue_is_shared": 15,
+  "n_genes": 15
+ },
+ "transfer_failures": [
+  {
+   "file": "8tui_A.pdb",
+   "element": "hinge",
+   "status": "absent",
+   "n_observed": 0,
+   "n_expected": 5
+  },
+  {
+   "file": "8tui_A.pdb",
+   "element": "BC",
+   "status": "absent",
+   "n_observed": 0,
+   "n_expected": 6
+  },
+  {
+   "file": "8tui_A.pdb",
+   "element": "FG",
+   "status": "absent",
+   "n_observed": 0,
+   "n_expected": 9
+  },
+  {
+   "file": "9bl6_G.pdb",
+   "element": "D0b",
+   "status": "partial",
+   "n_observed": 5,
+   "n_expected": 8
+  },
+  {
+   "file": "9bla_G.pdb",
+   "element": "CC'",
+   "status": "partial",
+   "n_observed": 2,
+   "n_expected": 4
+  }
+ ]
+}

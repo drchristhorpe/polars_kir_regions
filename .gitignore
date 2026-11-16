@@ -1,0 +1,16 @@
+# Rust
+/target/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# Built wheels
+/dist/
+
+# macOS
+.DS_Store

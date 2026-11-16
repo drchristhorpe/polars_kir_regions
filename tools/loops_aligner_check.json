@@ -1,0 +1,142 @@
+{
+ "traceback": {
+  "comparisons": 14355,
+  "identical": 14355,
+  "disagreements": 0,
+  "examples": [],
+  "alleles_with_multiple_optima": 185,
+  "tie_sensitive_alleles": [
+   "KIR3DL3*080N"
+  ]
+ },
+ "end_gaps": {
+  "allele_windows_changed": 28,
+  "allele_windows": 13977,
+  "chain_windows_changed": 0,
+  "chain_windows": 378,
+  "examples": [
+   {
+    "id": "KIR2DL1*114N",
+    "element": "CC'",
+    "penalized": null,
+    "free_ends": "CLTT"
+   },
+   {
+    "id": "KIR2DL1*114N",
+    "element": "BC",
+    "penalized": "RGCLTT",
+    "free_ends": null
+   },
+   {
+    "id": "KIR2DL3*008N",
+    "element": "hinge",
+    "penalized": null,
+    "free_ends": "NLLSQ"
+   },
+   {
+    "id": "KIR2DS4*0030101",
+    "element": "BC",
+    "penalized": null,
+    "free_ends": "GRPMNV"
+   },
+   {
+    "id": "KIR2DS4*0030101",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "QTRVIHCLF"
+   },
+   {
+    "id": "KIR2DS4*0030102",
+    "element": "BC",
+    "penalized": null,
+    "free_ends": "GRPMNV"
+   },
+   {
+    "id": "KIR2DS4*0030102",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "QTRVIHCLF"
+   },
+   {
+    "id": "KIR2DS4*0030103",
+    "element": "BC",
+    "penalized": null,
+    "free_ends": "GRPMNV"
+   },
+   {
+    "id": "KIR2DS4*0030103",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "QTRVIHCLF"
+   },
+   {
+    "id": "KIR2DS4*0030104",
+    "element": "BC",
+    "penalized": null,
+    "free_ends": "GRPMNV"
+   },
+   {
+    "id": "KIR2DS4*0030104",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "QTRVIHCLF"
+   },
+   {
+    "id": "KIR2DS4*0040101",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "SGQTRVIHC"
+   },
+   {
+    "id": "KIR2DS4*0040102",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "SGQTRVIHC"
+   },
+   {
+    "id": "KIR2DS4*0060101",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "SGQTRVIHC"
+   },
+   {
+    "id": "KIR2DS4*0060102",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "SGQTRVIHC"
+   },
+   {
+    "id": "KIR2DS4*007",
+    "element": "BC",
+    "penalized": null,
+    "free_ends": "GRPMNV"
+   },
+   {
+    "id": "KIR2DS4*007",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "QTRVIHCLF"
+   },
+   {
+    "id": "KIR2DS4*008",
+    "element": "BC",
+    "penalized": null,
+    "free_ends": "GRPMNV"
+   },
+   {
+    "id": "KIR2DS4*008",
+    "element": "FG",
+    "penalized": "STEHSTFLW",
+    "free_ends": "QTRVIHCLF"
+   },
+   {
+    "id": "KIR2DS4*009",
+    "element": "FG",
+    "penalized": null,
+    "free_ends": "SGQTRVIHC"
+   }
+  ],
+  "open_left_insertion_before": 0.0,
+  "open_left_insertion_after": -12.0
+ }
+}
